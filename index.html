@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <div class="page-header__control-panel">
+      <a class="logo" href="#">
+        <h1>Pink</h1>
+      </a>
+      <span class="nav-toggle"><a class="burger" href="#">Jткрыть меню</a></span>
+    </div>
+    <nav class="navigation">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__item" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-link" href="form.html">Конкурс</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-link" href="#">Html Aсademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="main-piture">
+      <div class="main-piture__img">
+      </div>
+    </section>
+    <section class="mobile-links">
+      <a class="downloud-app" href="https://www.apple.com/itunes/">
+        <h2>Скачать приложение</h2>
+      </a>
+      <ul>
+        <li class="mobile-links__element">
+          <a class="apple" href="https://www.apple.com"></a>
+        </li>
+        <li class="mobile-links__element">
+          <a class="android" href="https://play.google.com/store"></a>
+        </li>
+        <li class="mobile-links__element">
+          <a class="windows" href="https://www.microsoft.com/ru-ru/store/apps"></a>
+        </li>
+      </ul>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OSX, Windows 8</p>
+    </section>
+    <section class="promo-text">
+      <div class="slogan">
+        <p class="slogan__text">Устали от серости мегаполиса?</p>
+        <p class="slogan__text">Нам есть, что вам предложить!</p>
+      </div>
+    </section>
+    <section class="features">
+      <div class="feature">
+        <h2 class="feature__title">Поднимает настроение</h2>
+        <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="feature">
+        <h2 class="feature__title">Меняет мир вокруг</h2>
+        <p class="feature__text">Сделайте снимок и украстьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="feature">
+        <h2 class="feature__title">Заводит новых друзей</h2>
+        <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <img class="feature__img" src="http://placehold.it/100x150" alt="telefon">
+      </div>
+    </section>
+    <section class="rewiew">
+      <div class="slider">
+        <input type="radio" id="botn-1" name="rewiew-slider" checked>
+        <input type="radio" id="botn-2" name="rewiew-slider">
+        <input type="radio" id="botn-3" name="rewiew-slider">
+        <div class="slider__controls">
+          <label for="botn-1" class="circle"></label>
+          <label for="botn-2" class="circle"></label>
+          <label for="botn-3" class="circle"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <h2 class="slide__title">Николай Петров</h2>
+            <p class="slide__text">Это приложение перевернуло мой мир и позволило по-новому посмотреть на привычные вещи! А еще я познакомился со
+              своей будущей женой в комментариях к выложенной фотографии!</p>
+          </div>
+          <div class="slide">
+            <h2 class="slide__title">Иван Сидоров</h2>
+            <p class="slide__text">Это приложение перевернуло мой мир и позволило по-новому посмотреть на привычные вещи! А еще я познакомился со
+              своей будущей женой в комментариях к выложенной фотографии!</p>
+          </div>
+          <div class="slide">
+            <h2 class="slide__title">Михаил Иванов</h2>
+            <p class="slide__text">Это приложение перевернуло мой мир и позволило по-новому посмотреть на привычные вещи! А еще я познакомился со
+              своей будущей женой в комментариях к выложенной фотографии!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="price">
+      <div class="table-slider">
+        <table class="price-table">
+          <tr class="title-price">
+            <th class="title-price__block"></th>
+            <th class="price-table__block">База<span>1,99 USD</span></th>
+            <th class="price-table__block">Стандарт<span>3,99 USD</span></th>
+            <th class="price-table__block">Анлим<span>9,99 USD</span></th>
+          </tr>
+          <tr class="table-string">
+            <td class="table-string__cell">Розовый фильтр</td>
+            <td class="table-string__cell">да</td>
+            <td class="table-string__cell">да</td>
+            <td class="table-string__cell">да</td>
+          </tr>
+          <tr class="table-string">
+            <td class="table-string__cell">Смайлики</td>
+            <td class="table-string__cell">нет</td>
+            <td class="table-string__cell">да</td>
+            <td class="table-string__cell">да</td>
+          </tr>
+          <tr class="table-string">
+            <td class="table-string__cell">Комментарии</td>
+            <td class="table-string__cell">нет</td>
+            <td class="table-string__cell">нет</td>
+            <td class="table-string__cell">да</td>
+          </tr>
+        </table>
+        <input type="radio" id="btn-1" name="price-slider">
+        <input type="radio" id="btn-2" name="price-slider" checked>
+        <input type="radio" id="btn-3" name="price-slider">
+        <div class="slider-controls slider-controls--price">
+          <label for="btn-1" class="circle"></label>
+          <label for="btn-2" class="circle"></label>
+          <label for="btn-3" class="circle"></label>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="page-footer">
+    <!--Я правильно поняла, что футера нет и его заменить на div?? Почему? Контакты вроде как можно все-таки в футер поместить...-->
+    <div class="footer-wrap">
+      <div class="footer-wrap__text">
+        <h2>Остались вопросы? Свяжитесь с нами!</h2>
+      </div>
+      <div class="footer-wrap__block">
+        <h3>Звоните:</h3>
+        <div class="contacts"><a class="contact" href="#">+7 (812) 555-66-66</a></div>
+      </div>
+      <div class="footer-wrap__block">
+        <h3>Пишите:</h3>
+        <div class="contacts"><a class="contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+      </div>
+      <div class="footer-wrap__block">
+        <h3>Приезжайте в гости:</h3>
+        <div class="contacts">
+          <p>ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <a href="#"></a>
+    </div>
+  </footer>
+</body>
+
 </html>
