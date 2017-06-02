@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__control-panel">
+      <a class="logo" href="index.html">
+        <h1>Pink</h1>
+      </a>
+      <span class="nav-toggle"><a class="burger" href="#">Открыть меню</a></span>
+    </div>
+    <nav class="navigation">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-link" href="form.html">Конкурс</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu-link" href="#">Html Aсademy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="wrap-title">
+      <h1 class="wrap-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="wrap-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    </div>
+    <div class="wrap-form">
+      <form class="competition-form" action="http://echo.htmlacademy.ru" method="post">
+        <div class="competition-form__name">
+          <label for="surname">Фамилия:</label>
+          <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию" required>
+        </div>
+        <div class="competition-form__name">
+          <label for="first-name">Имя:</label>
+          <input type="text" id="first-name" name="surname" size="30" placeholder="Укажите имя" required>
+        </div>
+        <div class="competition-form__name">
+          <label for="patronymic">Отчество:</label>
+          <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Укажите отчество" required>
+        </div>
+        <div class="competition-form__checkboxes">
+          <h3 class="competition-form__checkboxes-title">Ваши безбашенные достижения в путешествии</h3>
+          <ul class="competition-form__checkbox-filter">
+            <li class="competition-form__checkbox-item"><input type="checkbox" name="option1" id="filter1" checked>
+              <label for="filter1">Сделал селфи с акулой</label>
+            </li>
+            <li class="competition-form__checkbox-item"><input type="checkbox" name="option2" id="filter2" checked>
+              <label for="filter2">Обгорел на пляже</label>
+            </li>
+            <li class="competition-form__checkbox-item"><input type="checkbox" name="option3" id="filter3">
+              <label for="filter3">Видел Чака Норриса</label>
+            </li>
+            <li class="competition-form__checkbox-item"><input type="checkbox" name="option4" id="filter4">
+              <label for="filter4">Накупил сувениров</label>
+            </li>
+            <li class="competition-form__checkbox-item"><input type="checkbox" name="option5" id="filter5" checked>
+              <label for="filter5">Удержал башню</label>
+            </li>
+            <li class="competition-form__checkbox-item"><input type="checkbox" name="option6" id="filter6">
+              <label for="filter6">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
+        <div class="competition-form__form-item-wrapper">
+          <div class="competition-form__name">
+            <label for="tel">Номер телефона</label>
+            <input type="text" id="tel" name="telephone" size="30" placeholder="Номер пожалуйста">
+          </div>
+          <div class="competition-form__name">
+            <label for="post">Адрес почты</label>
+            <input type="text" id="post" name="post-mail" size="30" placeholder="Введите почту" required>
+          </div>
+        </div>
+        <div class="competition-form__radio-block">
+          <h3 class="competition-form__radio-block-title">С каким приложением путешествовали?</h3>
+          <ul class="competition-form__radio-filter">
+            <li class="competition-form__radio-item">
+              <input type="radio" name="iOS" id="iOS">
+              <label for="iOS">Pink для iOS</label>
+            </li>
+            <li class="competition-form__radio-item">
+              <input type="radio" name="Android" id="Android">
+              <label for="Android">Pink на Android</label>
+            </li>
+            <li class="competition-form__radio-item">
+              <input type="radio" name="Windows Phone" id="Windows-Phone">
+              <label for="Windows-Phone">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
+        <div class="competition-form__emotion-wrapper">
+          <label for="letter">Опишите свои эмоции</label>
+          <textarea id="letter" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <div class="competition-form__submit">
+          <button type="submit" class="send-btn">Отправить</button>
+        </div>
+        <span class="explanation">-Обязательные поля
+          </span>
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-logo">
+      <a class="footer-logo__link" href="index.html">Pink</a>
+    </div>
+    <div class="soсial-web">
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="#">Твиттер</a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#">Фейсбук</a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#">Youtube</a></li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">Разработано
+      <a class="brand-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
