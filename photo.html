@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -11,10 +12,16 @@
 <body>
   <header class="page-header">
     <div class="page-header__control-panel">
-      <a class="logo" href="index.html">
+      <a class="logo" href="#">
         <h1>Pink</h1>
       </a>
-      <span class="nav-toggle"><a class="burger" href="#">Открыть меню</a></span>
+      <a class="logo__burger" href="#">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"
+          />
+        </svg>
+      </a>
     </div>
     <nav class="navigation">
       <ul class="menu">
@@ -22,13 +29,13 @@
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="photo.html">Фотографии</a>
+          <a class="menu__link" href="photo.html">Фотографии</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="form.html">Конкурс</a>
+          <a class="menu__link" href="form.html">Конкурс</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="#">Html Aсademy</a>
+          <a class="menu__link" href="https://www.htmlacademy.ru">Html Aсademy</a>
         </li>
       </ul>
     </nav>
@@ -37,13 +44,13 @@
     <div class="wrap-title">
       <h1 class="wrap-title__text">Фотографии пользователей</h1>
     </div>
-    <div class="wrap-text">
-      <p class="wrap-text__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <div class="wrap-photo-text">
+      <p class="wrap-photo-text__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
     <section>
       <div class="photo-block-main">
         <h2 class="photo-block-main__title">Панорама дня</h2>
-        <a class="photo-block-main__photo" href="#"><img src="http://placehold.it/150x100" alt="main-photo"></a>
+        <a class="photo-block-main__photo" href="#"><img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="main-photo"></a>
       </div>
       <div class="signature">
         <div class="signature__wrapper">
@@ -57,7 +64,7 @@
     <div class="wrapper-photo-blocks">
       <article class="photo-block">
         <div class="photo-block__photo">
-          <a class="photo-block__link" href="#"><img src="http://placehold.it/150x100" alt="user-photo"></a>
+          <a class="photo-block__link" href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
         <div class="signature">
           <div class="signature__wrapper">
@@ -70,7 +77,7 @@
       </article>
       <article class="photo-block">
         <div class="photo-block__photo">
-          <a class="photo-block__link" href="#"><img src="http://placehold.it/150x100" alt="user-photo"></a>
+          <a class="photo-block__link" href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
         <div class="signature">
           <div class="signature__wrapper">
@@ -83,7 +90,7 @@
       </article>
       <article class="photo-block">
         <div class="photo-block__photo">
-          <a class="photo-block__link" href="#"><img src="http://placehold.it/150x100" alt="user-photo"></a>
+          <a class="photo-block__link" href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
         <div class="signature">
           <div class="signature__wrapper">
@@ -96,7 +103,7 @@
       </article>
       <article class="photo-block">
         <div class="photo-block__photo">
-          <a class="photo-block__link" href="#"><img src="http://placehold.it/150x100" alt="user-photo"></a>
+          <a class="photo-block__link" href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
         <div class="signature">
           <div class="signature__wrapper">
@@ -109,7 +116,7 @@
       </article>
       <article class="photo-block">
         <div class="photo-block__photo">
-          <a class="photo-block__link" href="#"><img src="http://placehold.it/150x100" alt="user-photo"></a>
+          <a class="photo-block__link" href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
         <div class="signature">
           <div class="signature__wrapper">
@@ -122,7 +129,7 @@
       </article>
       <article class="photo-block">
         <div class="photo-block__photo">
-          <a class="photo-block__link" href="#"><img src="http://placehold.it/150x100" alt="user-photo"></a>
+          <a class="photo-block__link" href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
         <div class="signature">
           <div class="signature__wrapper">
@@ -139,7 +146,7 @@
     </div>
     <div class="preprocessing">
       <form class="preprocessing-form" enctype="multipart/form-data" action="http://echo.htmlacademy.ru" method="post">
-        <img src="http://placehold.it/100x150" alt="user-photo">
+        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="user-photo">
         <span class="reprocessing-icon"></span>
         <input type="range" min="0" max="100" step="1" value="50">
         <label for="toggle">ползунок</label>

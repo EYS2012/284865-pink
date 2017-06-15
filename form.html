@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -9,12 +10,18 @@
 </head>
 
 <body>
-  <header class="page-header">
+ <header class="page-header">
     <div class="page-header__control-panel">
-      <a class="logo" href="index.html">
+      <a class="logo" href="#">
         <h1>Pink</h1>
       </a>
-      <span class="nav-toggle"><a class="burger" href="#">Открыть меню</a></span>
+      <a class="logo__burger" href="#">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"
+          />
+        </svg>
+      </a>
     </div>
     <nav class="navigation">
       <ul class="menu">
@@ -22,23 +29,23 @@
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="photo.html">Фотографии</a>
+          <a class="menu__link" href="photo.html">Фотографии</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="form.html">Конкурс</a>
+          <a class="menu__link" href="form.html">Конкурс</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="#">Html Aсademy</a>
+          <a class="menu__link" href="https://www.htmlacademy.ru">Html Aсademy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
-    <div class="wrap-title">
-      <h1 class="wrap-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="wrap-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <div class="form-photo">
+      <h1 class="form-photo__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <div class="wrap-form">
+      <p class="wrap-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       <form class="competition-form" action="http://echo.htmlacademy.ru" method="post">
         <div class="competition-form__name">
           <label for="surname">Фамилия:</label>
@@ -107,7 +114,7 @@
           <textarea id="letter" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <div class="competition-form__submit">
-          <button type="submit" class="send-btn">Отправить</button>
+          <button type="submit" class="competition-form__send-btn">Отправить форму</button>
         </div>
         <span class="explanation">-Обязательные поля
           </span>
@@ -119,10 +126,10 @@
       <a class="footer-logo__link" href="index.html">Pink</a>
     </div>
     <div class="soсial-web">
-      <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link" href="#">Твиттер</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#">Фейсбук</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#">Youtube</a></li>
+      <ul class="soсial-web__list">
+        <li class="soсial-web__item"><a class="soсial-web__link" href="#">Твиттер</a></li>
+        <li class="soсial-web__item"><a class="soсial-web__link" href="#">Фейсбук</a></li>
+        <li class="soсial-webt__item"><a class="soсial-web__link" href="#">Youtube</a></li>
       </ul>
     </div>
     <div class="page-footer__copyright">Разработано

@@ -1,0 +1,10 @@
+@media (min-width: 320px) {
+  .page-header {
+     width: 320px;
+     padding-left:20px;
+     padding-right:20px;
+      }
+      }
+.page-header__control-panel {
+  background: @bg-menu;
+}
