@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -9,12 +10,18 @@
 </head>
 
 <body>
-  <header class="page-header">
+ <header class="page-header">
     <div class="page-header__control-panel">
       <a class="logo" href="index.html">
         <h1>Pink</h1>
       </a>
-      <span class="nav-toggle"><a class="burger" href="#">Открыть меню</a></span>
+      <a class="logo__burger" href="#">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"
+          />
+        </svg>
+      </a>
     </div>
     <nav class="navigation">
       <ul class="menu">
@@ -22,35 +29,35 @@
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="photo.html">Фотографии</a>
+          <a class="menu__link" href="photo.html">Фотографии</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="form.html">Конкурс</a>
+          <a class="menu__link" href="form.html">Конкурс</a>
         </li>
         <li class="menu__item">
-          <a class="menu-link" href="#">Html Aсademy</a>
+          <a class="menu__link" href="https://www.htmlacademy.ru">Html Aсademy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
-    <div class="wrap-title">
-      <h1 class="wrap-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="wrap-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <div class="form-photo">
+      <h1 class="form-photo__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <div class="wrap-form">
+      <p class="wrap-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
       <form class="competition-form" action="http://echo.htmlacademy.ru" method="post">
         <div class="competition-form__name">
           <label for="surname">Фамилия:</label>
-          <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию" required>
+          <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию *" required>
         </div>
         <div class="competition-form__name">
           <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="surname" size="30" placeholder="Укажите имя" required>
+          <input type="text" id="first-name" name="surname" size="30" placeholder="Введите ваше имя *" required>
         </div>
         <div class="competition-form__name">
           <label for="patronymic">Отчество:</label>
-          <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Укажите отчество" required>
+          <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Ну и отчество тоже" required>
         </div>
         <div class="competition-form__checkboxes">
           <h3 class="competition-form__checkboxes-title">Ваши безбашенные достижения в путешествии</h3>
@@ -82,22 +89,22 @@
           </div>
           <div class="competition-form__name">
             <label for="post">Адрес почты</label>
-            <input type="text" id="post" name="post-mail" size="30" placeholder="Введите почту" required>
+            <input type="text" id="post" name="post-mail" size="30" placeholder="Введите почту *" required>
           </div>
         </div>
         <div class="competition-form__radio-block">
           <h3 class="competition-form__radio-block-title">С каким приложением путешествовали?</h3>
           <ul class="competition-form__radio-filter">
             <li class="competition-form__radio-item">
-              <input type="radio" name="iOS" id="iOS">
+              <input type="radio" name="option" id="iOS" checked>
               <label for="iOS">Pink для iOS</label>
             </li>
             <li class="competition-form__radio-item">
-              <input type="radio" name="Android" id="Android">
-              <label for="Android">Pink на Android</label>
+              <input type="radio" name="option" id="Android">
+              <label for="Android">Pink для Android</label>
             </li>
             <li class="competition-form__radio-item">
-              <input type="radio" name="Windows Phone" id="Windows-Phone">
+              <input type="radio" name="option" id="Windows-Phone">
               <label for="Windows-Phone">Windows Phone</label>
             </li>
           </ul>
@@ -107,26 +114,27 @@
           <textarea id="letter" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <div class="competition-form__submit">
-          <button type="submit" class="send-btn">Отправить</button>
+          <button type="submit" class="competition-form__send-btn">Отправить форму</button>
         </div>
-        <span class="explanation">-Обязательные поля
+        <span class="competition-form__explanation">* &mdash; Обязательные поля
           </span>
       </form>
     </div>
   </main>
-  <footer class="page-footer">
-    <div class="footer-logo">
-      <a class="footer-logo__link" href="index.html">Pink</a>
+  <footer class="social-web">
+    <div class="social-web__logo">
+      <a class="sosial-web__link-logo" href="index.html">
+       <img class="social-web__picture" width="150px" src="/img/logo-pink-blue-mobile.svg?v=1.01">
+      </a>
     </div>
-    <div class="soсial-web">
-      <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link" href="#">Твиттер</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#">Фейсбук</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#">Youtube</a></li>
-      </ul>
+    <div class="social-web__block">
+        <a class="social-web__links social-web__links--twitter" href="https://www.twitter.com"></a>
+        <a class="social-web__links social-web__links--facebook" href="https://www.facebook.com"></a>
+        <a class="social-web__links social-web__links--youtube" href="https://www.youtube.com"></a>
     </div>
-    <div class="page-footer__copyright">Разработано
-      <a class="brand-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <div class="social-web__copyright"><span>Разработано</span>
+      <a class="social-web__brand-icon" href="https://htmlacademy.ru/intensive/adaptive">
+       <img width="27" src="/img/logo-htmlacademy.svg?v=1.01"></a>
     </div>
   </footer>
 </body>
