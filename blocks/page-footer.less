@@ -1,0 +1,86 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.page-footer__wrap {
+  width: 225px;
+
+}
+
+
+.page-footer h2{
+  color:@text-color;
+  font-weight: lighter;
+  font-size: 24px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.page-footer__contact {
+  color:@text-color-red;
+  font-size: 25px;
+  text-decoration:none;
+  font-weight: lighter;
+
+}
+
+.page-footer__block h3 {
+  font-size: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.page-footer__contacts:nth-child(2) {
+  padding-bottom: 20px;
+
+}
+
+.page-footer__contacts:nth-child(1) {
+   padding-bottom: 18px;
+
+}
+
+.page-footer__contacts {
+  padding-bottom: 20px;
+}
+
+.page-footer__contact p {
+   margin: 0px;
+   margin-top: 5px;
+}
+
+.page-footer__block:nth-child(4) {
+  padding-top: 5px;
+  position: relative;
+ }
+
+.page-footer__block:nth-child(4) .page-footer__contact {
+  padding-bottom: 30px;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+
+.page-footer::after {
+  position: absolute;
+  content: "";
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+  top:382px;
+  left: -140px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 70px;
+  width: 600px;
+
+  // overflow-x: hidden;
+  z-index: 100;
+
+}
