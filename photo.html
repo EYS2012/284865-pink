@@ -61,8 +61,8 @@
         </div>
       </div>
     </section>
-    <div class="wrapper-photo-blocks">
-      <article class="photo-block">
+    <div class="photo-block">
+      <article class="photo-block__item">
         <div class="photo-block__photo">
           <a class="photo-block__link" href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
@@ -75,7 +75,7 @@
           </div>
         </div>
       </article>
-      <article class="photo-block">
+      <article class="photo-block__item">
         <div class="photo-block__photo">
           <a class="photo-block__link" href="#"><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
@@ -88,7 +88,7 @@
           </div>
         </div>
       </article>
-      <article class="photo-block">
+      <article class="photo-block__item">
         <div class="photo-block__photo">
           <a class="photo-block__link" href="#"><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
@@ -101,7 +101,7 @@
           </div>
         </div>
       </article>
-      <article class="photo-block">
+      <article class="photo-block__item">
         <div class="photo-block__photo">
           <a class="photo-block__link" href="#"><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
@@ -114,7 +114,7 @@
           </div>
         </div>
       </article>
-      <article class="photo-block">
+      <article class="photo-block__item">
         <div class="photo-block__photo">
           <a class="photo-block__link" href="#"><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
@@ -127,7 +127,7 @@
           </div>
         </div>
       </article>
-      <article class="photo-block">
+      <article class="photo-block__item">
         <div class="photo-block__photo">
           <a class="photo-block__link" href="#"><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="user-photo"></a>
         </div>
@@ -140,40 +140,41 @@
           </div>
         </div>
       </article>
-      <div class="text-preprocessing">
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo-block__text">
+        <p>Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </div>
     <div class="preprocessing">
-      <form class="preprocessing-form" enctype="multipart/form-data" action="http://echo.htmlacademy.ru" method="post">
+      <form class="preprocessing__form" enctype="multipart/form-data" action="http://echo.htmlacademy.ru" method="post">
         <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="user-photo">
-        <span class="reprocessing-icon"></span>
+        <span class="preprocessing__icon"></span>
         <input type="range" min="0" max="100" step="1" value="50">
-        <label for="toggle">ползунок</label>
-        <span class="reprocessing-icon"></span>
+        <label class="preprocessing__scale" for="toggle"></label>
+        <span class="preprocessing__icon"></span>
         <input type="range" min="0" max="100" step="1" value="50">
-        <label for="toggle">ползунок</label>
-        <span class="reprocessing-icon"></span>
+        <label class="preprocessing__scale" for="toggle"></label>
+        <span class="preprocessing__icon"></span>
         <input type="range" min="0" max="100" step="1" value="50">
-        <label for="toggle">ползунок</label>
-        <button type="submit" class="send-btn">Запостить</button>
-        <button type="reset" class="reset-btn">Отмена</button>
+        <label class="preprocessing__scale" for="toggle"></label>
+        <button type="submit" class="preprocessing__send-btn">Запостить</button>
+        <button type="reset" class="preprocessing__reset-btn">Отмена</button>
       </form>
     </div>
   </main>
-  <footer class="page-footer">
-    <div class="footer-logo">
-      <a class="footer-logo__link" href="index.html">Pink</a>
+  <footer class="social-web">
+    <div class="social-web__logo">
+      <a class="sosial-web__link-logo" href="index.html">
+       <img class="social-web__picture" width="150px" src="/img/logo-pink-blue-mobile.svg?v=1.01">
+      </a>
     </div>
-    <div class="soсial-web">
-      <ul class="social-list">
-        <li class="social-list__item"><a class="social-link--tr" href="#">Твиттер</a></li>
-        <li class="social-list__item"><a class="social-link--fb" href="#">Фейсбук</a></li>
-        <li class="social-list__item"><a class="social-link--tube" href="#">Youtube</a></li>
-      </ul>
+    <div class="social-web__block">
+        <a class="social-web__links social-web__links--twitter" href="https://www.twitter.com"></a>
+        <a class="social-web__links social-web__links--facebook" href="https://www.facebook.com"></a>
+        <a class="social-web__links social-web__links--youtube" href="https://www.youtube.com"></a>
     </div>
-    <div class="page-footer__copyright">Разработано
-      <a class="brand-icon" href=https://htmlacademy.ru/intensive/adaptive></a>
+    <div class="social-web__copyright"><span>Разработано</span>
+      <a class="social-web__brand-icon" href="https://htmlacademy.ru/intensive/adaptive">
+       <img width="27" src="/img/logo-htmlacademy.svg?v=1.01"></a>
     </div>
   </footer>
 </body>

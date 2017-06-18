@@ -12,7 +12,7 @@
 <body>
  <header class="page-header">
     <div class="page-header__control-panel">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <h1>Pink</h1>
       </a>
       <a class="logo__burger" href="#">
@@ -45,19 +45,19 @@
       <h1 class="form-photo__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <div class="wrap-form">
-      <p class="wrap-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <p class="wrap-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
       <form class="competition-form" action="http://echo.htmlacademy.ru" method="post">
         <div class="competition-form__name">
           <label for="surname">Фамилия:</label>
-          <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию" required>
+          <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию *" required>
         </div>
         <div class="competition-form__name">
           <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="surname" size="30" placeholder="Укажите имя" required>
+          <input type="text" id="first-name" name="surname" size="30" placeholder="Введите ваше имя *" required>
         </div>
         <div class="competition-form__name">
           <label for="patronymic">Отчество:</label>
-          <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Укажите отчество" required>
+          <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Ну и отчество тоже" required>
         </div>
         <div class="competition-form__checkboxes">
           <h3 class="competition-form__checkboxes-title">Ваши безбашенные достижения в путешествии</h3>
@@ -89,22 +89,22 @@
           </div>
           <div class="competition-form__name">
             <label for="post">Адрес почты</label>
-            <input type="text" id="post" name="post-mail" size="30" placeholder="Введите почту" required>
+            <input type="text" id="post" name="post-mail" size="30" placeholder="Введите почту *" required>
           </div>
         </div>
         <div class="competition-form__radio-block">
           <h3 class="competition-form__radio-block-title">С каким приложением путешествовали?</h3>
           <ul class="competition-form__radio-filter">
             <li class="competition-form__radio-item">
-              <input type="radio" name="iOS" id="iOS">
+              <input type="radio" name="option" id="iOS" checked>
               <label for="iOS">Pink для iOS</label>
             </li>
             <li class="competition-form__radio-item">
-              <input type="radio" name="Android" id="Android">
-              <label for="Android">Pink на Android</label>
+              <input type="radio" name="option" id="Android">
+              <label for="Android">Pink для Android</label>
             </li>
             <li class="competition-form__radio-item">
-              <input type="radio" name="Windows Phone" id="Windows-Phone">
+              <input type="radio" name="option" id="Windows-Phone">
               <label for="Windows-Phone">Windows Phone</label>
             </li>
           </ul>
@@ -116,24 +116,25 @@
         <div class="competition-form__submit">
           <button type="submit" class="competition-form__send-btn">Отправить форму</button>
         </div>
-        <span class="explanation">-Обязательные поля
+        <span class="competition-form__explanation">* &mdash; Обязательные поля
           </span>
       </form>
     </div>
   </main>
-  <footer class="page-footer">
-    <div class="footer-logo">
-      <a class="footer-logo__link" href="index.html">Pink</a>
+  <footer class="social-web">
+    <div class="social-web__logo">
+      <a class="sosial-web__link-logo" href="index.html">
+       <img class="social-web__picture" width="150px" src="/img/logo-pink-blue-mobile.svg?v=1.01">
+      </a>
     </div>
-    <div class="soсial-web">
-      <ul class="soсial-web__list">
-        <li class="soсial-web__item"><a class="soсial-web__link" href="#">Твиттер</a></li>
-        <li class="soсial-web__item"><a class="soсial-web__link" href="#">Фейсбук</a></li>
-        <li class="soсial-webt__item"><a class="soсial-web__link" href="#">Youtube</a></li>
-      </ul>
+    <div class="social-web__block">
+        <a class="social-web__links social-web__links--twitter" href="https://www.twitter.com"></a>
+        <a class="social-web__links social-web__links--facebook" href="https://www.facebook.com"></a>
+        <a class="social-web__links social-web__links--youtube" href="https://www.youtube.com"></a>
     </div>
-    <div class="page-footer__copyright">Разработано
-      <a class="brand-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <div class="social-web__copyright"><span>Разработано</span>
+      <a class="social-web__brand-icon" href="https://htmlacademy.ru/intensive/adaptive">
+       <img width="27" src="/img/logo-htmlacademy.svg?v=1.01"></a>
     </div>
   </footer>
 </body>
