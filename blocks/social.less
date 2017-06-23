@@ -1,19 +1,22 @@
-.social-web {
-  display:flex;
+@media (min-width: 660px) {
+.social {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
-
+  width: 660px;
+}
 }
 
 @media (width: 320px) {
-.social-web .social-web--index {
+.social {
   display: none;
+  background: transparent;
+  color: transparent;
 }
 }
 
 
-.social-web__block {
+.social__block {
   width: 220px;
   display: flex;
   justify-content: center;
@@ -22,7 +25,7 @@
 }
 
 
-.social-web__links {
+.social__links {
     width: 47px;
     height: 47px;
     border-radius: 50%;
@@ -33,30 +36,26 @@
 }
 
 
-.social-web__links--twitter {
+.social__links--twitter {
   background: url("../img/icon-twitter.svg") 16px 14px no-repeat;
 
 }
 
-.social-web__links--facebook {
+.social__links--facebook {
   background: url("../img/icon-facebook.svg") 18px 13px no-repeat;
 
 }
 
-.social-web__links--youtube {
+.social__links--youtube {
   background: url("../img/icon-youtube.svg") 18px 15px no-repeat;
 
 }
 
-// .sprite-icon-vk:hover {
-//     background: #ee3643 url("../img/sprite.png") -244px -287px no-repeat;
-//  }
-
-.social-web__picture {
+.social__picture {
   padding-top: 60px;
 }
 
-.social-web__copyright {
+.social__copyright {
   padding-top: 30px;
 // align-self: baseline;
 display: flex;
@@ -66,7 +65,7 @@ align-items: center;
 }
 
 
-.social-web__brand-icon img {
+.social__brand-icon img {
   margin-left: 15px;
 
 }

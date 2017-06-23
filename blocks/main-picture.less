@@ -1,12 +1,61 @@
 
 .main-picture {
   width: 100%;
+  height: auto;
 }
 .main-picture__img {
   background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
   width: 100%;
+
 }
+
+@media @tablet-widths {
+.main-picture__img {
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+  width: 100%;
+  min-height: 497px;
+
+}
+}
+
+@media (min-width: 660px) {
+.main-picture__text {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+   width: 140px;
+   font-weight: 400;
+   font-size: 23px;
+   padding: 10px 0px;
+  //  padding-bottom: 82px;
+   line-height: 29px;
+
+}
+}
+
+// @media (width: 320px) {
+ .main-picture__text {
+  display: none;
+}
+
+
+
 .main-picture__img-hand {
   background: url(../img/iphone-hand-mobile@1x.png) no-repeat 0px 111px;
   height: 396px;
+
+}
+
+@media @tablet-widths {
+.main-picture__img-hand {
+  background: url(../img/iphone-hand-mobile@1x.png) no-repeat 270px 56px;
+  width: 140%;
+  height: 550px;
+
+}
 }
